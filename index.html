@@ -1,3 +1,11 @@
+<?php
+$alert = '';
+if(!empty($_POST)){
+
+$alert ="ingresando......";
+}
+
+?>
 <!DOCTYPE html>
 <html lan="eng">
 
@@ -6,45 +14,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>INICIO DE SESION</title>
-    
-<!--
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script src="scriptF.js"></script>
-
-    <link rel="stylesheet" href="estilos.css">
-    
-    -->
-  
     </head>
     <body>
 <center>
-    <div class="container">
+    <section class="container">
               <fieldset>
-            <form class="form_reg" name="contacto">
+            <form action="" method="post">
                 
                     <legend> <h4 style="text-align:center">INICIO DE SESION</h4></legend>
                   
-                    <input type="text"  placeholder="&#128100;USUARIO" ><br><br>
+                  <div>  <input type="text"   name 
+                    ="usuario" placeholder="&#128100;USUARIO" ></div>
                  
-                <input type="password" placeholder="CONTRASEÑA">
+               <div> <input type="password" name="clave" placeholder="CONTRASEÑA"></div>
                  
+                   <p class="alert"></p> 
                     
-                    <br>
-                     
                    
                  <a href="">Olvide mi contraseña</a>
-                    
-                    
-                    <br>
-                    <br>
-                    
-                    <input type="button" class="boton1" name="btn2" value="Iniciar sesion" onclick="obtenerdatos()">
+                 <div> <input type="submit" name="btn2" value="Iniciar sesion" ></div>
                 
             </form>
         </fieldset>
-        </div>
+    </section>
     </center>
     </body>
 
