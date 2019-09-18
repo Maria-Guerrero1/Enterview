@@ -3,7 +3,7 @@
     if(!empty($_POST))
     {
         $alert='';
-        if(empty($_POST['nombre'])||($_POST['pat'])||($_POST['mat'])||($_POST['date'])||($_POST['sexo'])||($_POST['email'])||($_POST['tel_movil'])||($_POST['tel_fijo'])||($_POST['direccion'])||($_POST['num_i'])||($_POST['num_e'])||($_POST['myFile'])||($_POST['vacante']))
+        if(empty($_POST['n\qombre'])||($_POST['pat'])||($_POST['mat'])||($_POST['date'])||($_POST['sexo'])||($_POST['email'])||($_POST['tel_movil'])||($_POST['tel_fijo'])||($_POST['direccion'])||($_POST['num_i'])||($_POST['num_e'])||($_POST['myFile'])($_POST['g_estuduio'])||($_POST['vacante']))
         {
                 $alert='<p> Todos los campos son obligatorios</p>';  
         }else{
@@ -57,8 +57,26 @@
             <input type='text' nombre="num_i" id="num_i"></div>
             <div><label for="myFile"> Adjuntar CV. </label>
             <input type="file" name="myFile">  </div>
+            <div> <label for="g_estudio">Grado de Estudio</label></div>
+             <select id="g_estudio" name="g_estudio">
+                <option value="1">Primaria</option>
+                <option value="2">Secundaria</option>
+                <option value="3">Medio superior</option>
+                <option value="4">Tecnico</option>
+                <option value="5">Licenciatura trunca</option>
+                <option value="6">Licenciatura</option>
+                <option value="7">Maestria</option>
+                <option value="8">Doctorado</option>
+            </select>
             <div><label for="vacante">Vacante </label>
-            <input type='text' name="vacante" id="vacante"></div>
+            <select id="vacante" name="vacante">
+             <option value="1">Desarrollador web</option>
+             <option value="2">Disenador</option>
+             <option value="3">Consultor</option>
+             <option value="4">Recursos humanos</option>
+             <option value="5">Contabilidad</option>
+               
+                </select></div>
         </form>
             <br>
              <div class="botones"><input type='submit' value='Regresar'>  <input type='submit' value='Registrar'></div>
