@@ -7,16 +7,16 @@ $db = 'Entrevista';
 
 //Lista de Tablas
 $tabla_db1 = "Bloques"; 	   // tabla de usuarios
-$tabla_db2 = "ContenidoEntrevista";
-$tabla_db3 = "GEstudios";
+$tabla_db2 = "Entrevistas";
+$tabla_db3 = "GradoEstudios";
 $tabla_db4 = "Preguntas";
 $tabla_db5 = "Respuestas";
 $tabla_db6 = "Roles";
 $tabla_db7= "Solicitante";
-$tabla_db8= "Usuarios";
-$tabla_db9= "Vacantes";
-$tabla_db10= "entrevista";
-$tabla_db11= "tipoPregunta";
+$tabla_db8= "TipoPregunta";
+$tabla_db9= "Usuarios";
+$tabla_db10= "Vacantes";
+
 
 
 

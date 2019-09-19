@@ -11,7 +11,7 @@ if(!empty($_POST)){
         require_once "conexion.php";
         $user = $_POST['usuario'];
         $pass = $_POST['clave'];
-        $query = mysqli_query($conection,"SELECT * FROM Usuarios WHERE usuario= '$user' AND contraseña= '$pass'");
+        $query = mysqli_query($conection,"SELECT * FROM Usuarios WHERE USUARIO= '$user' AND CONTRASEÑA= '$pass'");
         $result=mysqli_num_rows($query);
         if($result > 0)
         {
